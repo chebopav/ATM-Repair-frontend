@@ -6,7 +6,9 @@ ATMRepair.controller('viewController',
             $scope.selectedFilter = {};
             $scope.dataForFilter = {};
             $scope.filterName = {};
-            $scope.grid.enableSorting = true;
+            $scope.grid.enableSorting = false;
+            $scope.grid.enableHiding = false;
+            $scope.grid.enableColumnMenus = false;
             $scope.grid.paginationPageSize = 20;
             $scope.grid.paginationPageSizes = [20];
             $scope.grid.enableRowSelection = true;
