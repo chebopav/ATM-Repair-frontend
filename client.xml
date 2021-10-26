@@ -1,0 +1,20 @@
+<assembly>
+    <id>webjar</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}/target-grunt</directory>
+            <outputDirectory>META-INF/resources/webjars</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+            <excludes>
+                <exclude>node_modules/**</exclude>
+                <exclude>bower_components/**</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>

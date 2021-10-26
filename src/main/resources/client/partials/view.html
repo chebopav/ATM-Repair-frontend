@@ -1,0 +1,26 @@
+<div ng-controller="viewController" style="height: 100%; width: 100%">
+    <style>
+        .grid {
+            height: 600px;
+        }
+    </style>
+    <div>
+        <button ng-click="showAll()">Показать все</button>
+        <button ng-click="showTopCases()">Показать ТОП 3 причины</button>
+        <button ng-click="showTopLength()">Показать ТОП 3 времени ремонта</button>
+        <button ng-click="showDuplicates()">Показать повторные ремонты</button>
+    </div>
+    <div class="dropdown" ng-show="needFilter">
+        <span>{{filterName}}</span>
+        <select name="groupingFilter"
+                ng-options="fltr for fltr in mainFilter"
+                ng-change="showByFilter()"
+                ng-model="selectedFilter"></select>
+
+    </div>
+    <div id="grid" class="grid"
+         ui-grid-selection
+         ui-grid-pagination
+         ui-grid="grid" >
+    </div>
+</div>

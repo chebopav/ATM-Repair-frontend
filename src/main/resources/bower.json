@@ -1,0 +1,16 @@
+{
+  "name": "ATM-Repair",
+  "version": "1.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "angular-route": "latest",
+    "angular-ui-router": "latest",
+    "angular-resource": "latest",
+    "angular-ui-grid": "latest",
+    "js-xlsx" : "latest"
+  },
+     "resolutions": {
+       "angular": "latest"
+     }
+}

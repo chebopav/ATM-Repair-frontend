@@ -1,0 +1,5 @@
+/.idea/
+/target/
+/target-grunt/
+ATM-Repair-frontend.iml
+src/main/resources/client/bower_components

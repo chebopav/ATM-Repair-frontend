@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM-Repair</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="app.js"></script>
+</head>
+<body ng-app="ATMRepair">
+<div class="header">
+    <div>Система контроля ремонтов банкоматов</div>
+    <div ng-controller="AppController">
+        <button ng-click="clickFileOptions()">Загрузить файлы</button>
+        <button ng-click="clickViewOptions()">Просмотр</button>
+    </div>
+</div>
+<div class="mainContent">
+    <ui-view>
+    </ui-view>
+</div>
+</body>
+</html>

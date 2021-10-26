@@ -1,0 +1,12 @@
+{
+  "name": "ATM-repair",
+  "version": "1.0-SNAPSHOT",
+  "dependencies": {
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-bower-concat": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy-force": "latest"
+  }
+}
